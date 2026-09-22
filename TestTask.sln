@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask.API", "TestTask.API\TestTask.API.csproj", "{6BB29F99-D3DB-45E4-8F62-53BAA67AEC4C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask.BLL", "TestTask.BLL\TestTask.BLL.csproj", "{B062A450-81C0-4844-9903-32F138AAAC83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestTask.DAL", "TestTask.DAL\TestTask.DAL.csproj", "{07E36924-D8E3-416D-B800-C807E4D11ACA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BB29F99-D3DB-45E4-8F62-53BAA67AEC4C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BB29F99-D3DB-45E4-8F62-53BAA67AEC4C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BB29F99-D3DB-45E4-8F62-53BAA67AEC4C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BB29F99-D3DB-45E4-8F62-53BAA67AEC4C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B062A450-81C0-4844-9903-32F138AAAC83}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B062A450-81C0-4844-9903-32F138AAAC83}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B062A450-81C0-4844-9903-32F138AAAC83}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B062A450-81C0-4844-9903-32F138AAAC83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07E36924-D8E3-416D-B800-C807E4D11ACA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07E36924-D8E3-416D-B800-C807E4D11ACA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07E36924-D8E3-416D-B800-C807E4D11ACA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07E36924-D8E3-416D-B800-C807E4D11ACA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
