@@ -12,5 +12,13 @@ public class AppDbContext : DbContext
     public DbSet<Booking> Bookings => Set<Booking>();
     public DbSet<BookingService> BookingServices => Set<BookingService>();
     public DbSet<RoomService> RoomServices => Set<RoomService>();
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.ApplyConfigurationsFromAssembly(
+        typeof(AppDbContext).Assembly);
+        
+        base.OnModelCreating(modelBuilder);
+    }
         
 }
