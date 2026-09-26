@@ -8,6 +8,6 @@ public class Booking : BaseEntity
     public decimal HourlyRate { get; set; }
     public decimal TotalPrice { get; set; }
     
-    public Room Room { get; set; }
-    public ICollection<BookingService> BookingServices { get; set; }
+    public Room Room { get; set; } = null!;
+    public ICollection<BookingService> BookingServices { get; set; } = new List<BookingService>();
 }

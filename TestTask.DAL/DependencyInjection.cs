@@ -17,4 +17,20 @@ public static class DependencyInjection
 
         return services;
     }
+
+    public static async Task SeedDalAsync(
+        this IServiceProvider serviceProvider,
+        CancellationToken cancellationToken)
+    {
+        using var scope = serviceProvider.CreateScope();
+
+        var context = scope.ServiceProvider
+            .GetRequiredService<AppDbContext>();
+
+        await DbSeeder.SeedAsync(
+            context,
+            roomCount: 20,
+            maxBookingsPerRoom: 3,
+            cancellationToken);
+    }
 }

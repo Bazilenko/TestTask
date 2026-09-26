@@ -17,6 +17,8 @@ builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
 var app = builder.Build();
 
+await app.Services.SeedDalAsync(
+    CancellationToken.None);
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
