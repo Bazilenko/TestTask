@@ -19,6 +19,10 @@ public class BookingConfiguration : IEntityTypeConfiguration<Booking>
             .IsRequired()
             .HasPrecision(18, 2);
 
+        builder.Property(x => x.HourlyRate)
+            .IsRequired()
+            .HasPrecision(18, 2);
+
         builder.HasOne(x => x.Room)
             .WithMany(x => x.Bookings)
             .HasForeignKey(x => x.RoomId)

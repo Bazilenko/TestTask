@@ -21,6 +21,8 @@ public class AppDbContext : DbContext
         AddSoftDeleteFilter<Room>(modelBuilder);
         AddSoftDeleteFilter<Service>(modelBuilder);
         AddSoftDeleteFilter<Booking>(modelBuilder);
+        AddSoftDeleteFilter<BookingService>(modelBuilder);
+        AddSoftDeleteFilter<RoomService>(modelBuilder);
         
         base.OnModelCreating(modelBuilder);
     }
