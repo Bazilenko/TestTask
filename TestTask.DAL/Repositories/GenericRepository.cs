@@ -3,6 +3,7 @@ using TestTask.DAL.Data;
 using TestTask.DAL.Entities;
 using TestTask.DAL.Interfaces;
 using Microsoft.EntityFrameworkCore;
+using System.Linq.Expressions;
 
 namespace TestTask.DAL.Repositories;
 
@@ -28,7 +29,7 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
         Update(entity);
     }
 
-    public async Task<List<TEntity>> GetAllAsync(CancellationToken ct)
+    public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken ct)
     {
         return await _dbSet.ToListAsync(ct);
     }
@@ -47,4 +48,6 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
     {
         _dbSet.Update(entity);
     }
+
+    
 }

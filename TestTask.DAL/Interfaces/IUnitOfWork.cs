@@ -6,5 +6,9 @@ public interface IUnitOfWork
     IBookingRepository Bookings { get; }
 
     IServiceRepository Services { get; }
+
+    IRoomServiceRepository RoomServices {get; }
+
+    IBookingServiceRepository BookingServices {get; }
     Task SaveChangesAsync(CancellationToken ct);
 }
