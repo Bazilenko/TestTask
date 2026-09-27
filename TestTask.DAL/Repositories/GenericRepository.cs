@@ -31,7 +31,7 @@ public class GenericRepository<TEntity> : IGenericRepository<TEntity> where TEnt
 
     public async Task<List<TEntity>> GetAllAsync(Expression<Func<TEntity, bool>> predicate, CancellationToken ct)
     {
-        return await _dbSet.ToListAsync(ct);
+        return await _dbSet.Where(predicate).ToListAsync(ct);
     }
 
     public async Task<TEntity?> GetById(int id, CancellationToken ct)
