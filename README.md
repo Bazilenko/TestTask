@@ -203,7 +203,7 @@ TestTask
 ```
 
 ## Database
-
+Database Diagram : https://dbdiagram.io/d/TestTask-6ab18fd29ba2420e18d4f42f
 The application uses SQL Server with Entity Framework Core.
 
 Main entities:
